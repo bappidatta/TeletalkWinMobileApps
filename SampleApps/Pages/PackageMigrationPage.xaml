@@ -63,10 +63,31 @@
 
             <ListView Name="packagesLigrationListView"
                   DataContext="{Binding}"
-                  IsItemClickEnabled="True"
-                  ItemClick="packagesLigrationListView_ItemClick"
                   Loaded="packagesLigrationListView_Loaded">
 
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Background="#98e698" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="55">
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <TextBlock Text="PACKAGE" Width="150" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            </Border>
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <TextBlock Text="CODE" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            </Border>
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <TextBlock Text="SEND TO" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            </Border>
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <TextBlock Text="SEND" Width="130" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            </Border>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="55">
@@ -82,9 +103,14 @@
                                 <TextBlock Text="{Binding send_to}" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
                                            TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                             </Border>
-                            <Border BorderThickness="1" BorderBrush="White" Background="#55d5f9" Width="130">
-                                <TextBlock Text="Send" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <Button Click="btnSend_Click" Content="SEND" Name="btnSend"
+                                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                    Foreground="Black" FontSize="16" BorderBrush="Transparent">
+                                    <Button.Background>
+                                        <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
+                                    </Button.Background>
+                                </Button>
                             </Border>
                         </StackPanel>
                     </DataTemplate>

@@ -89,6 +89,7 @@
     </Compile>
     <Compile Include="Models\ListViewValue.cs" />
     <Compile Include="Models\UsefulContactViewModel.cs" />
+    <Compile Include="Models\VasViewModel.cs" />
     <Compile Include="Pages\MenuDialog.xaml.cs">
       <DependentUpon>MenuDialog.xaml</DependentUpon>
     </Compile>

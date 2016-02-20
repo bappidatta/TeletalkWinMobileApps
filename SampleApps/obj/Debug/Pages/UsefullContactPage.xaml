@@ -67,7 +67,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                            <StackPanel Width="1*" Background="#E6E6FA" Height="150" Orientation="Vertical" HorizontalAlignment="Stretch">
+                            <StackPanel Width="{Binding SetWidth}" Background="#E6E6FA" Height="150" Orientation="Vertical" HorizontalAlignment="Stretch">
                                 <Border BorderThickness="1" BorderBrush="White">
                                     <TextBlock Text="{Binding Title}" Height="Auto" MinHeight="50" TextWrapping="Wrap" 
                                                VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="22"/>
@@ -82,7 +82,7 @@
                                 </Border>
                             </StackPanel>
 
-                            <StackPanel Width="1*" Background="White" Height="150" Orientation="Vertical" Visibility="{Binding IsVisible}">
+                            <StackPanel Width="160" Background="White" Height="150" Orientation="Vertical" Visibility="{Binding IsVisible}">
                                 <Button x:ConnectionId='7'                      Content="Check" 
                                         HorizontalAlignment="Center" VerticalAlignment="Center"
                                         Foreground="Black" FontSize="20">

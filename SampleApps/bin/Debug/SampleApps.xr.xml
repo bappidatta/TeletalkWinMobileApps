@@ -26,10 +26,13 @@
     <RootPropertyPathName Name="send_to" />
     <RootPropertyPathName Name="package_code" />
     <RootPropertyPathName Name="child" />
+    <RootPropertyPathName Name="isVisible" />
+    <RootPropertyPathName Name="buttonText" />
     <RootPropertyPathName Name="helpline" />
     <RootPropertyPathName Name="address" />
     <RootPropertyPathName Name="district" />
     <RootPropertyPathName Name="IsVisible" />
+    <RootPropertyPathName Name="SetWidth" />
     <RootPropertyPathName Name="Charge" />
     <RootPropertyPathName Name="Text" />
     <RootPropertyPathName Name="Title" />
@@ -98,9 +101,9 @@
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="IsTapEnabled" />
+      <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="HeaderTemplate" />
       <RootEvent Name="Loaded" />
       <RootEvent Name="ItemClick" />
     </RootType>
@@ -111,9 +114,9 @@
       <RootProperty Name="Children" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Name" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
@@ -164,6 +167,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="SampleApps.Pages.SmsDialog" />

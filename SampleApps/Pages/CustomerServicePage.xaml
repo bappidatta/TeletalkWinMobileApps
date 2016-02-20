@@ -69,7 +69,7 @@
 
                 <ListView.HeaderTemplate>
                     <DataTemplate>
-                        <StackPanel Background="#E6E6FA" HorizontalAlignment="Stretch" Orientation="Horizontal" Height="50">
+                        <StackPanel Background="#98e698" HorizontalAlignment="Stretch" Orientation="Horizontal" Height="50">
                             <Border BorderThickness="1" Width="145" BorderBrush="White">
                                 <TextBlock Text="Station" HorizontalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
                             </Border>

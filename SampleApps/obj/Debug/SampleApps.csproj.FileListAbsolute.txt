@@ -121,7 +121,6 @@ E:\Development\Project\SampleApps\SampleApps\bin\Debug\AppxManifest.xml
 E:\Development\Project\SampleApps\SampleApps\bin\Debug\SampleApps.build.appxrecipe
 E:\Development\Project\SampleApps\SampleApps\bin\Debug\Newtonsoft.Json.dll
 E:\Development\Project\SampleApps\SampleApps\bin\Debug\Newtonsoft.Json.xml
-E:\Development\Project\SampleApps\SampleApps\obj\Debug\SampleApps.csprojResolveAssemblyReference.cache
 E:\Development\Project\SampleApps\SampleApps\obj\Debug\App.g.i.cs
 E:\Development\Project\SampleApps\SampleApps\obj\Debug\App.g.cs
 E:\Development\Project\SampleApps\SampleApps\obj\Debug\MainPage.g.i.cs
@@ -199,3 +198,4 @@ E:\Development\Project\SampleApps\SampleApps\obj\Debug\qualifiers.txt
 E:\Development\Project\SampleApps\SampleApps\obj\Debug\qualifiers.txt.intermediate
 E:\Development\Project\SampleApps\SampleApps\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 E:\Development\Project\SampleApps\SampleApps\obj\Debug\ProjectArchitectures.txt
+E:\Development\Project\SampleApps\SampleApps\obj\Debug\SampleApps.csprojResolveAssemblyReference.cache

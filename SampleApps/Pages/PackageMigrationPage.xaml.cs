@@ -57,11 +57,11 @@ namespace SampleApps.Pages
             Frame.Navigate(typeof(MainPage));
         }
 
-        private async void packagesLigrationListView_ItemClick(object sender, ItemClickEventArgs e)
+        private async void btnSend_Click(object sender, RoutedEventArgs e)
         {
-            PackageMigration selectedItem = (PackageMigration)e.ClickedItem;
+            PackageMigration clickedItem = (PackageMigration)(sender as Button).DataContext;
 
-            SmsDialog smsDialog = new SmsDialog(selectedItem.send_to, selectedItem.package_code);
+            SmsDialog smsDialog = new SmsDialog(clickedItem.send_to, clickedItem.package_code);
             await smsDialog.ShowAsync();
         }
 

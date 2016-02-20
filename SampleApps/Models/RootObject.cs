@@ -280,6 +280,7 @@ namespace SampleApps
     public class Child2
     {
         public string name { get; set; }
+        public string url { get; set; }
     }
 
     public class Child

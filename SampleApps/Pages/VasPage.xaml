@@ -69,7 +69,7 @@
                             <Border Name="parentBorder" Background="#55d5f9" Tapped="parentBorder_Tapped">
                                 <TextBlock Text="{Binding name}" Width="480" Height="50" TextWrapping="Wrap" Foreground="Black" FontSize="22"/>
                             </Border>
-                            
+
                             <Border BorderThickness="1" BorderBrush="White"  HorizontalAlignment="Stretch"></Border>
 
                             <ListView
@@ -78,14 +78,25 @@
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <Border BorderThickness="1" BorderBrush="White">
-                                            <TextBlock Text="{Binding name}" Width="480" Height="50" Name="btnChild" Tapped="btnChild_Tapped"
-                                                       TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="{Binding name}" Width="480" Height="50" Name="btnChild"
+                                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+
+                                                <Button Visibility="{Binding isVisible}" Click="btnVas_Click" 
+                                                    Content="{Binding buttonText}" Name="btnVas" BorderBrush="Transparent"
+                                                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                                                    Foreground="Black" FontSize="16">
+                                                    <Button.Background>
+                                                        <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
+                                                    </Button.Background>
+                                                </Button>
+                                            </StackPanel>
                                         </Border>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
                         </StackPanel>
-                        
+
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

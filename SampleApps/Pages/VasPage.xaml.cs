@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SampleApps.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -43,17 +44,49 @@ namespace SampleApps.Pages
 
         private void vasListView_Loaded(object sender, RoutedEventArgs e)
         {
-            List<Child> childs = new List<Child>();
+            List<VasViewModel> vasList = new List<VasViewModel>();
+            VasViewModel vasVM;
+            List<ChildViewModel> childList;
+            string _url = string.Empty;
+            string _name = string.Empty;
+            string _buttonText = string.Empty;
+            string _isVisible = string.Empty;
 
             foreach(Va item in data.vas)
             {
-                foreach (Child child in item.child)
+                foreach (Child parent in item.child)
                 {
-                    childs.Add(child);
+                    vasVM = new VasViewModel();
+                    vasVM.name = parent.name;
+
+                    childList = new List<ChildViewModel>();
+
+                    foreach (var child in parent.child)
+                    {
+                        _url = this.GetUrl(child.name);
+
+                        if(_url != string.Empty)
+                        {
+                            _name = child.name.Replace(_url, "");
+                            _buttonText = parent.name == "Mobile TV" ? "To Visit" : "For Details";
+                            _isVisible = "Visible";
+                        }
+                        else
+                        {
+                            _name = child.name;
+                            _buttonText = string.Empty;
+                            _isVisible = "Collapsed";
+                        }
+                        
+                        childList.Add(new ChildViewModel() { name = _name, url = _url, buttonText = _buttonText, isVisible = _isVisible });
+                    }
+
+                    vasVM.child = childList;
+                    vasList.Add(vasVM);
                 }
             }
 
-            vasListView.ItemsSource = childs;
+            vasListView.ItemsSource = vasList;
         }
 
         private void imgBack_Tapped(object sender, TappedRoutedEventArgs e)
@@ -95,18 +128,27 @@ namespace SampleApps.Pages
         {
             await Launcher.LaunchUriAsync(new Uri("https://www.youtube.com/channel/UCSnD9nJ3w4WqU0V6LG7b6Vg"));
         }
-
-        private async void btnChild_Tapped(object sender, TappedRoutedEventArgs e)
+        
+        private string GetUrl(string text)
         {
-            Child2 clickedItem = (Child2)(sender as TextBlock).DataContext;
-
-            if(clickedItem.name.Contains("http"))
+            if (text.Contains("http"))
             {
                 Regex urlRx = new Regex(@"((https?|ftp|file)\://|www.)[A-Za-z0-9\.\-]+(/[A-Za-z0-9\?\&\=;\+!'\(\)\*\-\._~%]*)*", RegexOptions.IgnoreCase);
-                Match match = urlRx.Match(clickedItem.name);
+                Match match = urlRx.Match(text);
 
-                await Launcher.LaunchUriAsync(new Uri(match.Value));
+                return match.Value;
             }
+            else
+            {
+                return string.Empty;
+            }
+        }
+
+        private async void btnVas_Click(object sender, RoutedEventArgs e)
+        {
+            ChildViewModel clickedItem = (ChildViewModel)(sender as Button).DataContext;
+
+            await Launcher.LaunchUriAsync(new Uri(clickedItem.url));
         }
     }
 }
