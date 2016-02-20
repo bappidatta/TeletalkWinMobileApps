@@ -89,9 +89,9 @@ namespace SampleApps.Pages
                 recipients = ((TeletalkCorporate)clickedItem).code;
             }
 
-            if (recipients == "empty")
+            if (body == "empty")
             {
-                Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallUI(body, "Voice Package");
+                Windows.ApplicationModel.Calls.PhoneCallManager.ShowPhoneCallUI(recipients, "Voice Package");
             }
             else
             {
