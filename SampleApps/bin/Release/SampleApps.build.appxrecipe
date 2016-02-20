@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BAPPI-PC</Machine>
+    <WindowsUser>BAPPI</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>0f9f8a40-ba89-4ea8-80b3-99d2335e07b5</PackageIdentityName>
+    <IntermediateOutputPath>D:\Development\Practice\SampleApps\SampleApps\obj\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\SampleApps.exe">
+      <PackagePath>SampleApps.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\action_bar.png">
+      <PackagePath>Assets\action_bar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\app_ic_launcher.png">
+      <PackagePath>Assets\app_ic_launcher.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\back.png">
+      <PackagePath>Assets\back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\back_icon.png">
+      <PackagePath>Assets\back_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\bt_close.png">
+      <PackagePath>Assets\bt_close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\contact_icon.png">
+      <PackagePath>Assets\contact_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\customar_care_icon.png">
+      <PackagePath>Assets\customar_care_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\dialog_menu_list.png">
+      <PackagePath>Assets\dialog_menu_list.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\down_arrow.png">
+      <PackagePath>Assets\down_arrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\facebook.png">
+      <PackagePath>Assets\facebook.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\fnf_icon.png">
+      <PackagePath>Assets\fnf_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\footer.png">
+      <PackagePath>Assets\footer.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\help_icon.png">
+      <PackagePath>Assets\help_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\home_icon.png">
+      <PackagePath>Assets\home_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\icon.png">
+      <PackagePath>Assets\icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\ic_launcher.png">
+      <PackagePath>Assets\ic_launcher.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\Info-24.png">
+      <PackagePath>Assets\Info-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\internet_package_icon.png">
+      <PackagePath>Assets\internet_package_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\left_arrow.png">
+      <PackagePath>Assets\left_arrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\loadingicon.png">
+      <PackagePath>Assets\loadingicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\packages_icon.png">
+      <PackagePath>Assets\packages_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\package_migration_icon.png">
+      <PackagePath>Assets\package_migration_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\popup_backscreen.png">
+      <PackagePath>Assets\popup_backscreen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\redbtn.png">
+      <PackagePath>Assets\redbtn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\SplashScreen-480.scale-100.png">
+      <PackagePath>Assets\SplashScreen-480.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\SplashScreen-480.scale-140.png">
+      <PackagePath>Assets\SplashScreen-480.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\SplashScreen-480.scale-240.png">
+      <PackagePath>Assets\SplashScreen-480.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\tele.png">
+      <PackagePath>Assets\tele.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\teletalk.png">
+      <PackagePath>Assets\teletalk.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\teletalkgicon.png">
+      <PackagePath>Assets\teletalkgicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\teletalkicon.png">
+      <PackagePath>Assets\teletalkicon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\teletalk_g.png">
+      <PackagePath>Assets\teletalk_g.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\twitter.png">
+      <PackagePath>Assets\twitter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\up_arrow.png">
+      <PackagePath>Assets\up_arrow.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\vas_icon.png">
+      <PackagePath>Assets\vas_icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\Assets\youtube.png">
+      <PackagePath>Assets\youtube.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\MenuDialog.xbf">
+      <PackagePath>Pages\MenuDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\AboutPage.xbf">
+      <PackagePath>Pages\AboutPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\SmsDialog.xbf">
+      <PackagePath>Pages\SmsDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\VoicePackagePage.xbf">
+      <PackagePath>Pages\VoicePackagePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\InternetPackagePage.xbf">
+      <PackagePath>Pages\InternetPackagePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\PackageMigrationPage.xbf">
+      <PackagePath>Pages\PackageMigrationPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\VasPage.xbf">
+      <PackagePath>Pages\VasPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\FnfDialog.xbf">
+      <PackagePath>Pages\FnfDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\InternetPackageDialog.xbf">
+      <PackagePath>Pages\InternetPackageDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\CustomerServicePage.xbf">
+      <PackagePath>Pages\CustomerServicePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\UsefullContactPage.xbf">
+      <PackagePath>Pages\UsefullContactPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\Pages\VoicePackageDialog.xbf">
+      <PackagePath>Pages\VoicePackageDialog.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\SampleApps.xr.xml">
+      <PackagePath>SampleApps.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Development\Practice\SampleApps\SampleApps\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

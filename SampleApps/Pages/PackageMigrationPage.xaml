@@ -1,0 +1,107 @@
+﻿<Page
+    x:Class="SampleApps.Pages.PackageMigrationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleApps.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black">
+
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!--Row 1-->
+        <Image Source="/Assets/action_bar.png" 
+               Grid.Row="0" Grid.ColumnSpan="2"/>
+
+        <!--Row 2-->
+        <Image Source="/Assets/left_arrow.png" 
+               Grid.Row="1" Grid.Column="0"
+               Name="imgBack" Tapped="imgBack_Tapped"
+               HorizontalAlignment="Left" Margin="15,0"/>
+
+        <Image Source="/Assets/home_icon.png" 
+               Grid.Row="1" Grid.Column="1"
+               Name="imgHome" Tapped="imgHome_Tapped"
+               HorizontalAlignment="Right" Margin="15,0"/>
+
+        <!--Row 3-->
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.ColumnSpan="2">
+            <Border Background="#55d5f9">
+                <TextBlock 
+                Text="Packages Migration" 
+                HorizontalAlignment="Stretch"
+                TextAlignment="Center"
+                Foreground="Black" 
+                FontWeight="Bold"
+                Height="49"
+                FontSize="30"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="White" HorizontalAlignment="Stretch"></Border>
+        </StackPanel>
+
+        <!--Row 4-->
+        <ScrollViewer
+            Grid.Row="3" Grid.ColumnSpan="2"
+            VerticalScrollBarVisibility="Visible" 
+            VerticalScrollMode="Enabled"
+            IsTapEnabled="False"
+            Margin="0,0,0,5"
+            Background="#E6E6FA">
+
+            <ListView Name="packagesLigrationListView"
+                  DataContext="{Binding}"
+                  IsItemClickEnabled="True"
+                  ItemClick="packagesLigrationListView_ItemClick"
+                  Loaded="packagesLigrationListView_Loaded">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="55">
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <TextBlock Text="{Binding package_name}" Width="150" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            </Border>
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <TextBlock Text="{Binding package_code}" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            </Border>
+                            <Border BorderThickness="1" BorderBrush="White">
+                                <TextBlock Text="{Binding send_to}" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            </Border>
+                            <Border BorderThickness="1" BorderBrush="White" Background="#55d5f9" Width="130">
+                                <TextBlock Text="Send" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                            </Border>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+
+        <!--Row 5-->
+        <Image Source="/Assets/tele.png" Name="imgTeletalk" Tapped="imgTeletalk_Tapped"
+               Grid.Row="4" Grid.Column="0" Margin="15,0"
+               HorizontalAlignment="Left"/>
+
+        <Image Source="/Assets/facebook.png" Name="imgFacebook" Tapped="imgFacebook_Tapped"
+               Grid.Row="4" Grid.Column="1" />
+
+        <Image Source="/Assets/youtube.png" Name="imgYoutube" Tapped="imgYoutube_Tapped"
+               Grid.Row="4" Grid.Column="1" 
+               HorizontalAlignment="Right" Margin="15,0"/>
+    </Grid>
+</Page>

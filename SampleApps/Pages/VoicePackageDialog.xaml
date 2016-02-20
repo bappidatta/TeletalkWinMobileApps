@@ -1,0 +1,33 @@
+﻿<ContentDialog
+    x:Class="SampleApps.Pages.VoicePackageDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleApps.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent"
+    Title="">
+
+    <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Button Height="100" FontSize="20" Margin="10" BorderBrush="#55d5f9" 
+                Background="#55d5f9" Foreground="Black" FontWeight="Normal"
+                HorizontalAlignment="Stretch" Content="3G Packages"
+                Click="btn3gPackage_Click"/>
+
+        <Button Height="100" FontSize="20" Margin="10" BorderBrush="#55d5f9" 
+                Background="#55d5f9" Foreground="Black" FontWeight="Normal"
+                HorizontalAlignment="Stretch" Content="Prepaid Packages"
+                Click="btnPrepaidPackage_Click"/>
+
+        <Button Height="100" FontSize="20" Margin="10" BorderBrush="#55d5f9" 
+                Background="#55d5f9" Foreground="Black" FontWeight="Normal"
+                HorizontalAlignment="Stretch" Content="Postpaid Packages"
+                Click="btnPostpaidPackage_Click"/>
+
+        <Button Height="100" FontSize="20" Margin="10" BorderBrush="#55d5f9" 
+                Background="#55d5f9" Foreground="Black" FontWeight="Normal"
+                HorizontalAlignment="Stretch" Content="Corporate Packages"
+                Click="btnCorporatePackage_Click"/>
+    </StackPanel>    
+</ContentDialog>
