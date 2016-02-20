@@ -66,6 +66,14 @@ namespace SampleApps.Pages
             await smsDialog.ShowAsync();
         }
 
+        private async void btnSend_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+
+            SmsDialog smsDialog = new SmsDialog("111", button.Content.ToString());
+            await smsDialog.ShowAsync();
+        }
+
         private async void imgTeletalk_Tapped(object sender, TappedRoutedEventArgs e)
         {
             await Launcher.LaunchUriAsync(new Uri("http://www.teletalk.com.bd/"));
