@@ -117,7 +117,7 @@
                                 <Button Click="btnSend_Click" Name="btnSend"
                                     Content="{Binding subscription_code}" 
                                     HorizontalAlignment="Center" VerticalAlignment="Center"
-                                    Foreground="Black" FontSize="16">
+                                    Foreground="Black" FontSize="16" BorderBrush="Transparent">
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
                                     </Button.Background>

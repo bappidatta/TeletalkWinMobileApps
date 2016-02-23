@@ -205,7 +205,7 @@
                                 </Border>
                                 
                                 <Button Click="btnSend_Click" Content="Send" 
-                                    BorderBrush="Transparent" Width="240"
+                                    BorderBrush="Transparent" Width="235"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                                     Foreground="Black" FontSize="16">
                                     <Button.Background>

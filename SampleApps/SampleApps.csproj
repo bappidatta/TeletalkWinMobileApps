@@ -152,6 +152,8 @@
     <Content Include="Assets\footer.png" />
     <Content Include="Assets\green_button_large.png" />
     <Content Include="Assets\green_button_small.png" />
+    <Content Include="Assets\Help-72.png" />
+    <Content Include="Assets\helpline.png" />
     <Content Include="Assets\help_icon.png" />
     <Content Include="Assets\home_icon.png" />
     <Content Include="Assets\icon.png" />

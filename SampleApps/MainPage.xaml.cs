@@ -150,7 +150,7 @@ namespace SampleApps
             taskList.Add(new ListViewValue { id = 4, name = "Package Migration", image = "Assets/package_migration_icon.png" });
             taskList.Add(new ListViewValue { id = 5, name = "VAS", image = "Assets/vas_icon.png" });
             taskList.Add(new ListViewValue { id = 6, name = "Customer Services", image = "Assets/customar_care_icon.png" });
-            taskList.Add(new ListViewValue { id = 8, name = "Help Line", image = "Assets/contact_icon.png" });
+            taskList.Add(new ListViewValue { id = 8, name = "Help Line", image = "Assets/helpline.png" });
             taskList.Add(new ListViewValue { id = 7, name = "Others", image = "Assets/contact_icon.png" });
 
             return taskList;

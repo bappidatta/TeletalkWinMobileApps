@@ -65,6 +65,12 @@
     <AppxPackagedFile Include="E:\Development\Project\SampleApps\SampleApps\Assets\green_button_small.png">
       <PackagePath>Assets\green_button_small.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Development\Project\SampleApps\SampleApps\Assets\Help-72.png">
+      <PackagePath>Assets\Help-72.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Development\Project\SampleApps\SampleApps\Assets\helpline.png">
+      <PackagePath>Assets\helpline.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Development\Project\SampleApps\SampleApps\Assets\help_icon.png">
       <PackagePath>Assets\help_icon.png</PackagePath>
     </AppxPackagedFile>
