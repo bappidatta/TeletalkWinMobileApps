@@ -71,13 +71,13 @@
                     <DataTemplate>
                         <StackPanel Background="#98e698" HorizontalAlignment="Stretch" Orientation="Horizontal" Height="50">
                             <Border BorderThickness="1" Width="145" BorderBrush="White">
-                                <TextBlock Text="Station" HorizontalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                                <TextBlock Text="Station" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
                             </Border>
                             <Border BorderThickness="1" Width="160" BorderBrush="White">
-                                <TextBlock Text="Address" HorizontalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                                <TextBlock Text="Address" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
                             </Border>
                             <Border BorderThickness="1" Width="140" BorderBrush="White">
-                                <TextBlock Text="Help Line" HorizontalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+                                <TextBlock Text="Help Line" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
                             </Border>
                         </StackPanel>
                     </DataTemplate>
@@ -87,13 +87,13 @@
                     <DataTemplate>
                         <StackPanel Background="#E6E6FA" HorizontalAlignment="Stretch" Orientation="Horizontal">
                             <Border BorderThickness="1" Width="145" BorderBrush="White">
-                                <TextBlock Text="{Binding district}" TextWrapping="Wrap" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                                <TextBlock Text="{Binding district}" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
                             </Border>
                             <Border BorderThickness="1" Width="160" BorderBrush="White">
-                                <TextBlock Text="{Binding address}" TextWrapping="Wrap" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                                <TextBlock Text="{Binding address}" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
                             </Border>
                             <Border BorderThickness="1" Width="150" BorderBrush="White">
-                                <TextBlock Text="{Binding helpline}" TextWrapping="Wrap" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                                <TextBlock Text="{Binding helpline}" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
                             </Border>
                         </StackPanel>
                     </DataTemplate>
