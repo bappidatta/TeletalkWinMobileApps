@@ -82,7 +82,7 @@
                                 </Border>
                             </StackPanel>
 
-                            <StackPanel Width="160" Background="White" Height="150" Orientation="Vertical" Visibility="{Binding IsVisible}">
+                            <StackPanel Width="150" Background="White" Height="150" Orientation="Vertical" Visibility="{Binding IsVisible}">
                                 <Button x:ConnectionId='7'                      Content="Check" 
                                         HorizontalAlignment="Center" VerticalAlignment="Center"
                                         Foreground="Black" FontSize="20" BorderBrush="Transparent">

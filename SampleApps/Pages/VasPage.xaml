@@ -65,7 +65,7 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Width="480" Orientation="Vertical" Name="vasStackPanel">
+                        <StackPanel Width="470" Orientation="Vertical" Name="vasStackPanel">
                             <Border Name="parentBorder" Background="#55d5f9" Tapped="parentBorder_Tapped">
                                 <TextBlock Text="{Binding name}" Width="480" Height="50" TextWrapping="Wrap" Foreground="Black" FontSize="22"/>
                             </Border>
@@ -79,7 +79,7 @@
                                     <DataTemplate>
                                         <Border BorderThickness="1" BorderBrush="White">
                                             <StackPanel Orientation="Vertical">
-                                                <TextBlock Text="{Binding name}" Width="480" Height="50" Name="btnChild"
+                                                <TextBlock Text="{Binding name}" Width="470" Height="50" Name="btnChild"
                                                            TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
 
                                                 <Button Visibility="{Binding isVisible}" Click="btnVas_Click" 

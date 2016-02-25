@@ -57,23 +57,23 @@
         <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Background="#98e698" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="50">
             <Border BorderThickness="1" BorderBrush="White">
                 <TextBlock Text="SPEED" Width="90" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
             </Border>
             <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="VOLUME" Width="85" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                <TextBlock Text="VOLUME" Width="80" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
             </Border>
             <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="CHARGE" Width="85" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                <TextBlock Text="CHARGE" Width="80" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
             </Border>
             <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="VALIDITY" Width="90" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                <TextBlock Text="VALIDITY" Width="85" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
             </Border>
             <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="TO SUBSCRIBE" Width="95" Tapped="btnSend_Tapped" Name="btnSend" 
-                                           HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                <TextBlock Text="TO SUBSCRIBE" Width="102" Tapped="btnSend_Tapped" Name="btnSend" 
+                                           HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
             </Border>
         </StackPanel>
 
@@ -97,23 +97,23 @@
                         <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="50">
                             <Border BorderThickness="1" BorderBrush="White">
                                 <TextBlock Text="{Binding speed_name}" Width="90" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
                             </Border>
                             <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="{Binding data_volume}" Width="85" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <TextBlock Text="{Binding data_volume}" Width="80" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
                             </Border>
                             <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="{Binding subscription_fee}" Width="85" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <TextBlock Text="{Binding subscription_fee}" Width="80" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
                             </Border>
                             <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="{Binding validity}" Width="90" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <TextBlock Text="{Binding validity}" Width="85" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="16"/>
                             </Border>
                             <Border BorderThickness="1" BorderBrush="White">
                                 <Button Click="btnSend_Click" Name="btnSend"
-                                    Content="{Binding subscription_code}" Width="95"
+                                    Content="{Binding subscription_code}" Width="100"
                                     HorizontalAlignment="Center" VerticalAlignment="Center"
                                     Foreground="Black" FontSize="16" BorderBrush="Transparent">
                                     <Button.Background>

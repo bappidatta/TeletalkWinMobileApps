@@ -83,129 +83,129 @@
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="On-Net Voice" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="On-Net Voice" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding on_net_voice}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
-
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Off-Net Voice" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding off_net_voice}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="{Binding on_net_voice}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                             </StackPanel>
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="On-Net Video" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="Off-Net Voice" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding on_net_viddeo}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="{Binding off_net_voice}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="On-Net Video" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="{Binding on_net_viddeo}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 
                             </StackPanel>
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf Num" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="Fnf Num" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding no_of_fnf}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
-
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf On-Net Voice" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding fnf_on_net_voice}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="{Binding no_of_fnf}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                             </StackPanel>
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf Video" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="Fnf On-Net Voice" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding fnf_video}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
-
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf Sms" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding fnf_sms}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="{Binding fnf_on_net_voice}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                             </StackPanel>
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Data Rate" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="Fnf Video" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding data_rate}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
-
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Pulse" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding pulse}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="{Binding fnf_video}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                             </StackPanel>
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Mobile Tv" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="Fnf Sms" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding mobile_tv}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
-
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="MMS On-Net" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding mms_on_net}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="{Binding fnf_sms}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                             </StackPanel>
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="SMS On-Net" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="Data Rate" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding sms_on_net}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
-
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="SMS Off-Net" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding sms_off_net}" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="{Binding data_rate}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                             </StackPanel>
 
                             <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
                                 <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="To Subscribe" Width="240" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                    <TextBlock Text="Pulse" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="{Binding pulse}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="Mobile Tv" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="{Binding mobile_tv}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="MMS On-Net" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="{Binding mms_on_net}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="SMS On-Net" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="{Binding sms_on_net}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="SMS Off-Net" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="{Binding sms_off_net}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
+                                <Border BorderThickness="1" BorderBrush="White">
+                                    <TextBlock Text="To Subscribe" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
                                 </Border>
                                 
                                 <Button x:ConnectionId='7'                       Content="Send" 
-                                    BorderBrush="Transparent" Width="235"
+                                    BorderBrush="Transparent" Width="225"
                                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                                     Foreground="Black" FontSize="16">
                                     <Button.Background>
