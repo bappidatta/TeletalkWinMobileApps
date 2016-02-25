@@ -13,6 +13,7 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
@@ -53,8 +54,32 @@
         </StackPanel>
 
         <!--Row 4-->
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Background="#98e698" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="50">
+            <Border BorderThickness="1" BorderBrush="White">
+                <TextBlock Text="SPEED" Width="90" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="White">
+                <TextBlock Text="VOLUME" Width="85" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="White">
+                <TextBlock Text="CHARGE" Width="85" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="White">
+                <TextBlock Text="VALIDITY" Width="90" TextAlignment="Center" VerticalAlignment="Center"
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            </Border>
+            <Border BorderThickness="1" BorderBrush="White">
+                <TextBlock Text="TO SUBSCRIBE" Width="95" Tapped="btnSend_Tapped" Name="btnSend" 
+                                           HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            </Border>
+        </StackPanel>
+
+        <!--Row 5-->
         <ScrollViewer
-            Grid.Row="3" Grid.ColumnSpan="2"
+            Grid.Row="4" Grid.ColumnSpan="2"
             VerticalScrollBarVisibility="Visible" 
             VerticalScrollMode="Enabled"
             IsTapEnabled="False"
@@ -66,33 +91,6 @@
                   Loaded="internetPackagesListView_Loaded"
                   IsTapEnabled="False"
                   IsItemClickEnabled="False">
-
-                <ListView.HeaderTemplate>
-                    <DataTemplate>
-                        <StackPanel Background="#98e698" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="50">
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="SPEED" Width="90" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                            </Border>
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="VOLUME" Width="85" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                            </Border>
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="CHARGE" Width="85" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                            </Border>
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="VALIDITY" Width="90" TextAlignment="Center" VerticalAlignment="Center"
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                            </Border>
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="TO SUBSCRIBE" Width="100" Tapped="btnSend_Tapped" Name="btnSend" 
-                                           HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                            </Border>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.HeaderTemplate>
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -115,7 +113,7 @@
                             </Border>
                             <Border BorderThickness="1" BorderBrush="White">
                                 <Button Click="btnSend_Click" Name="btnSend"
-                                    Content="{Binding subscription_code}" 
+                                    Content="{Binding subscription_code}" Width="95"
                                     HorizontalAlignment="Center" VerticalAlignment="Center"
                                     Foreground="Black" FontSize="16" BorderBrush="Transparent">
                                     <Button.Background>
@@ -129,16 +127,16 @@
             </ListView>
         </ScrollViewer>
 
-        <!--Row 5-->
+        <!--Row 6-->
         <Image Source="/Assets/tele.png" 
-               Grid.Row="4" Grid.Column="0" Margin="15,0" Name="imgTeletalk" Tapped="imgTeletalk_Tapped"
+               Grid.Row="5" Grid.Column="0" Margin="15,0" Name="imgTeletalk" Tapped="imgTeletalk_Tapped"
                HorizontalAlignment="Left"/>
 
         <Image Source="/Assets/facebook.png" Name="imgFacebook" Tapped="imgFacebook_Tapped"
-               Grid.Row="4" Grid.Column="1" />
+               Grid.Row="5" Grid.Column="1" />
 
         <Image Source="/Assets/youtube.png" Name="imgYoutube" Tapped="imgYoutube_Tapped"
-               Grid.Row="4" Grid.Column="1" 
+               Grid.Row="5" Grid.Column="1" 
                HorizontalAlignment="Right" Margin="15,0"/>
     </Grid>
 </Page>

@@ -101,7 +101,6 @@
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="IsTapEnabled" />
-      <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="ItemsSource" />
       <RootEvent Name="Loaded" />
@@ -131,8 +130,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Height" />
-      <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Name" />
       <RootProperty Name="MinHeight" />
       <RootEvent Name="Tapped" />
     </RootType>
