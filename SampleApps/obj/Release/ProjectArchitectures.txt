@@ -1,1 +1,0 @@
-D:\Development\Practice\SampleApps\SampleApps\SampleApps.csproj;neutral
