@@ -108,5 +108,10 @@ namespace SampleApps.Pages
                 await smsDialog.ShowAsync();
             }
         }
+
+        private void usefullContactListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

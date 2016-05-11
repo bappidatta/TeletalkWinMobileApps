@@ -84,7 +84,7 @@
 
             <ListView Name="packagesLigrationListView"
                   DataContext="{Binding}"
-                  Loaded="packagesLigrationListView_Loaded">
+                  Loaded="packagesLigrationListView_Loaded" ItemClick="packagesLigrationListView_ItemClick">
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>

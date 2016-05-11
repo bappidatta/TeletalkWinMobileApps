@@ -1,0 +1,4 @@
+MainPackage=D:\Workshop\Teletalk\SampleApps\bin\Release\SampleApps_1.1.0.2_AnyCPU.appx
+SymbolPackage=D:\Workshop\Teletalk\SampleApps\AppPackages\SampleApps_1.1.0.2_Test\SampleApps_1.1.0.2_AnyCPU.appxsym
+ResourcePack=D:\Workshop\Teletalk\SampleApps\bin\Release\SampleApps_1.1.0.2_scale-100.appx
+ResourcePack=D:\Workshop\Teletalk\SampleApps\bin\Release\SampleApps_1.1.0.2_scale-140.appx

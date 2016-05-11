@@ -62,7 +62,7 @@
 
             <ListView Name="usefullContactListView" 
                   DataContext="{Binding}"
-                  Loaded="usefullContactListView_Loaded">
+                  Loaded="usefullContactListView_Loaded" ItemClick="usefullContactListView_ItemClick">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>

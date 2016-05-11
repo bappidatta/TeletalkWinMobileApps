@@ -79,5 +79,10 @@ namespace SampleApps.Pages
         {
             await Launcher.LaunchUriAsync(new Uri("https://www.youtube.com/channel/UCSnD9nJ3w4WqU0V6LG7b6Vg"));
         }
+
+        private void packagesLigrationListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

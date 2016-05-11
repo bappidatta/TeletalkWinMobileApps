@@ -184,6 +184,7 @@
     <Content Include="Assets\vas_icon.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="Assets\youtube.png" />
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
