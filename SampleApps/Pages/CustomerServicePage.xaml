@@ -19,8 +19,8 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <!--Row 1-->
@@ -53,17 +53,23 @@
             <Border BorderThickness="1" BorderBrush="White" HorizontalAlignment="Stretch"></Border>
         </StackPanel>
 
-        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Background="#98e698" HorizontalAlignment="Stretch" Orientation="Horizontal" Height="50">
-            <Border BorderThickness="1" Width="145" BorderBrush="White">
-                <TextBlock Text="Station" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Background="#98e698" HorizontalAlignment="Stretch" Height="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                <TextBlock Text="Station" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="14"/>
             </Border>
-            <Border BorderThickness="1" Width="160" BorderBrush="White">
-                <TextBlock Text="Address" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+            <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                <TextBlock Text="Address" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="14"/>
             </Border>
-            <Border BorderThickness="1" Width="140" BorderBrush="White">
-                <TextBlock Text="Help Line" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="20"/>
+            <Border BorderThickness="1" BorderBrush="White" Grid.Column="2">
+                <TextBlock Text="Help Line" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="14"/>
             </Border>
-        </StackPanel>
+        </Grid>
 
         <!--Row 4-->
         <ScrollViewer
@@ -80,19 +86,31 @@
                   IsTapEnabled="False"
                   IsItemClickEnabled="False">
 
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Background="#E6E6FA" HorizontalAlignment="Stretch" Orientation="Horizontal">
-                            <Border BorderThickness="1" Width="145" BorderBrush="White">
-                                <TextBlock Text="{Binding district}" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                        <Grid Background="#E6E6FA">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                <TextBlock Text="{Binding district}" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="14"/>
                             </Border>
-                            <Border BorderThickness="1" Width="160" BorderBrush="White">
-                                <TextBlock Text="{Binding address}" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                            <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                <TextBlock Text="{Binding address}" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="14"/>
                             </Border>
-                            <Border BorderThickness="1" Width="150" BorderBrush="White">
-                                <TextBlock Text="{Binding helpline}" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                            <Border BorderThickness="1" BorderBrush="White" Grid.Column="2">
+                                <TextBlock Text="{Binding helpline}" TextWrapping="Wrap" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="14"/>
                             </Border>
-                        </StackPanel>
+                        </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -100,12 +118,11 @@
 
         <!--Row 6-->
         <Image Source="/Assets/tele.png" Name="imgTeletalk" Tapped="imgTeletalk_Tapped"
-               Grid.Row="5" Grid.Column="0" Margin="15,0"
+               Grid.Row="5" Grid.Column="0" Margin="15,0" Stretch="None"
                HorizontalAlignment="Left"/>
 
         <Image Source="/Assets/facebook.png" Name="imgFacebook" Tapped="imgFacebook_Tapped"
-               Grid.Row="5" Grid.Column="1" 
-               />
+               Grid.Row="5" Grid.Column="1" Margin="15,0"/>
 
         <Image Source="/Assets/youtube.png" Name="imgYoutube" Tapped="imgYoutube_Tapped"
                Grid.Row="5" Grid.Column="1" 

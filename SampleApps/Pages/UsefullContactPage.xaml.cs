@@ -60,7 +60,7 @@ namespace SampleApps.Pages
                     MessageSento = item.msg_sendto,
 
                     IsVisible  = !String.IsNullOrEmpty(item.other_text) ? "Collapsed" : "Visible",
-                    SetWidth = !String.IsNullOrEmpty(item.other_text) ? "470" : "320",
+                    SetWidth = !String.IsNullOrEmpty(item.other_text) ? "2" : "1",
                 });
             }
 

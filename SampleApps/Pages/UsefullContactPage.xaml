@@ -18,8 +18,8 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <!--Row 1-->
@@ -64,34 +64,45 @@
                   DataContext="{Binding}"
                   Loaded="usefullContactListView_Loaded" ItemClick="usefullContactListView_ItemClick">
 
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                            <StackPanel Width="{Binding SetWidth}" Background="#E6E6FA" Height="150" Orientation="Vertical" HorizontalAlignment="Stretch">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="100"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0" Grid.ColumnSpan="{Binding SetWidth}" Background="#E6E6FA" Height="150" Orientation="Vertical" HorizontalAlignment="Stretch">
                                 <Border BorderThickness="1" BorderBrush="White">
                                     <TextBlock Text="{Binding Title}" Height="Auto" MinHeight="50" TextWrapping="Wrap" 
-                                               VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="22"/>
+                                               VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="14"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
                                     <TextBlock Text="{Binding Text}" Height="50" TextWrapping="Wrap" 
-                                               VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                                               VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="14"/>
                                 </Border>
                                 <Border BorderThickness="1" BorderBrush="White">
                                     <TextBlock Text="{Binding Charge}" Height="50" TextWrapping="Wrap" 
-                                               VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="20"/>
+                                               VerticalAlignment="Center" TextAlignment="Center" Foreground="Black" FontSize="14"/>
                                 </Border>
                             </StackPanel>
 
-                            <StackPanel Width="150" Background="White" Height="150" Orientation="Vertical" Visibility="{Binding IsVisible}">
-                                <Button Click="Button_Click" Content="Check" 
+                            <Border Grid.Column="1" Background="White" Height="150" Visibility="{Binding IsVisible}">
+                                <Button Click="Button_Click" Content="Check" MinWidth="80"
                                         HorizontalAlignment="Center" VerticalAlignment="Center"
-                                        Foreground="Black" FontSize="20" BorderBrush="Transparent">
+                                        Foreground="Black" FontSize="14" BorderBrush="Transparent">
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
                                     </Button.Background>
                                 </Button>
-                            </StackPanel>
-                        </StackPanel>
+                            </Border>
+                        </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -99,11 +110,11 @@
 
         <!--Row 5-->
         <Image Source="/Assets/tele.png" Name="imgTeletalk" Tapped="imgTeletalk_Tapped"
-               Grid.Row="4" Grid.Column="0" Margin="15,0"
+               Grid.Row="4" Grid.Column="0" Margin="15,0" Stretch="None"
                HorizontalAlignment="Left"/>
 
         <Image Source="/Assets/facebook.png" Name="imgFacebook" Tapped="imgFacebook_Tapped"
-               Grid.Row="4" Grid.Column="1" />
+               Grid.Row="4" Grid.Column="1"  Margin="15,0" />
 
         <Image Source="/Assets/youtube.png" Name="imgYoutube" Tapped="imgYoutube_Tapped"
                Grid.Row="4" Grid.Column="1" 

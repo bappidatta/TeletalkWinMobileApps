@@ -63,11 +63,17 @@
                   DataContext="{Binding}"
                   Loaded="vasListView_Loaded">
 
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Width="470" Orientation="Vertical" Name="vasStackPanel">
+                        <StackPanel Orientation="Vertical" Name="vasStackPanel">
                             <Border Name="parentBorder" Background="#55d5f9" Tapped="parentBorder_Tapped">
-                                <TextBlock Text="{Binding name}" Width="480" Height="50" TextWrapping="Wrap" Foreground="Black" FontSize="22"/>
+                                <TextBlock Text="{Binding name}" Height="50" TextWrapping="Wrap" Foreground="Black" FontSize="22"/>
                             </Border>
 
                             <Border BorderThickness="1" BorderBrush="White"  HorizontalAlignment="Stretch"></Border>
@@ -75,17 +81,24 @@
                             <ListView
                                 Visibility="Collapsed"
                                 ItemsSource="{Binding child}">
+
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <Border BorderThickness="1" BorderBrush="White">
                                             <StackPanel Orientation="Vertical">
-                                                <TextBlock Text="{Binding name}" Width="470" Height="50" Name="btnChild"
-                                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                                <TextBlock Text="{Binding name}" Height="auto" Name="btnChild"
+                                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
 
                                                 <Button Visibility="{Binding isVisible}" Click="btnVas_Click" 
                                                     Content="{Binding buttonText}" Name="btnVas" BorderBrush="Transparent"
                                                     HorizontalAlignment="Center" VerticalAlignment="Center"
-                                                    Foreground="Black" FontSize="16">
+                                                    Foreground="Black" FontSize="14">
                                                     <Button.Background>
                                                         <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
                                                     </Button.Background>
@@ -104,7 +117,7 @@
 
         <!--Row 5-->
         <Image Source="/Assets/tele.png" Name="imgTeletalk" Tapped="imgTeletalk_Tapped"
-               Grid.Row="4" Grid.Column="0" Margin="15,0"
+               Grid.Row="4" Grid.Column="0" Margin="15,0" Stretch="None"
                HorizontalAlignment="Left"/>
 
         <Image Source="/Assets/facebook.png" Name="imgFacebook" Tapped="imgFacebook_Tapped"
