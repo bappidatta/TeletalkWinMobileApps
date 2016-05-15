@@ -138,12 +138,9 @@
                            TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                             </Border>
                             <Border BorderThickness="1" BorderBrush="White" Grid.Column="4">
-                                <Button Click="btnSend_Click" Name="btnSend" MinWidth="85"
+                                <Button Click="btnSend_Click" Name="btnSend" MinWidth="100" Margin="0" Padding="0" BorderThickness="0"
                                     HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding subscription_code}"
                                     Foreground="Black" FontSize="14" BorderBrush="Transparent">
-                                    <!--<Button.Content>
-                                        <TextBlock TextWrapping="Wrap" Text="{Binding subscription_code}"></TextBlock>
-                                    </Button.Content>-->
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
                                     </Button.Background>

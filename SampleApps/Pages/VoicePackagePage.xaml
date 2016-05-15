@@ -282,9 +282,10 @@
 
                                 <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
                                     <Button Click="btnSend_Click" Content="Send" 
-                                    BorderBrush="Transparent" 
-                                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                                    Foreground="Black" FontSize="14">
+                                        BorderBrush="Transparent" 
+                                        Margin="0" Padding="0" BorderThickness="0"
+                                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                                        Foreground="Black" FontSize="14">
                                         <Button.Background>
                                             <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
                                         </Button.Background>
