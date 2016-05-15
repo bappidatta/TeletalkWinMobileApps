@@ -18,8 +18,8 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <!--Row 1-->
@@ -67,6 +67,12 @@
                   IsTapEnabled="False"
                   IsItemClickEnabled="False">
 
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Vertical">
@@ -81,139 +87,209 @@
                                     FontSize="25"/>
                             </Border>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="On-Net Voice" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding on_net_voice}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Off-Net Voice" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="On-Net Voice" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding off_net_voice}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White"  Grid.Column="1">
+                                    <TextBlock Text="{Binding on_net_voice}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                            </StackPanel>
+                            </Grid>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="On-Net Video" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding on_net_viddeo}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                
-                            </StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf Num" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Off-Net Voice" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding no_of_fnf}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding off_net_voice}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                            </StackPanel>
+                            </Grid>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf On-Net Voice" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding fnf_on_net_voice}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf Video" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="On-Net Video" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding fnf_video}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding on_net_viddeo}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                            </StackPanel>
+                            </Grid>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Fnf Sms" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding fnf_sms}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Data Rate" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Fnf Num" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding data_rate}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding no_of_fnf}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                            </StackPanel>
+                            </Grid>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Pulse" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding pulse}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="Mobile Tv" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Fnf On-Net Voice" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding mobile_tv}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding fnf_on_net_voice}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                            </StackPanel>
+                            </Grid>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="MMS On-Net" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding mms_on_net}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="SMS On-Net" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Fnf Video" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding sms_on_net}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding fnf_video}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                            </StackPanel>
+                            </Grid>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="SMS Off-Net" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="{Binding sms_off_net}" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
-                                </Border>
-                            </StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
 
-                            <StackPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
-                                <Border BorderThickness="1" BorderBrush="White">
-                                    <TextBlock Text="To Subscribe" Width="225" TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Fnf Sms" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                                 </Border>
-                                
-                                <Button Click="btnSend_Click" Content="Send" 
-                                    BorderBrush="Transparent" Width="225"
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding fnf_sms}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Data Rate" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding data_rate}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Pulse" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding pulse}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="Mobile Tv" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding mobile_tv}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="MMS On-Net" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding mms_on_net}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="SMS On-Net" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding sms_on_net}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="SMS Off-Net" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <TextBlock Text="{Binding sms_off_net}" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+                            </Grid>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                    <TextBlock Text="To Subscribe" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
+                                </Border>
+
+                                <Border BorderThickness="1" BorderBrush="White" Grid.Column="1">
+                                    <Button Click="btnSend_Click" Content="Send" 
+                                    BorderBrush="Transparent" 
                                     HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
-                                    Foreground="Black" FontSize="16">
-                                    <Button.Background>
-                                        <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
-                                    </Button.Background>
-                                </Button>
-
-                            </StackPanel>
+                                    Foreground="Black" FontSize="14">
+                                        <Button.Background>
+                                            <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
+                                        </Button.Background>
+                                    </Button>
+                                </Border>
+                            </Grid>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
@@ -222,11 +298,11 @@
 
         <!--Row 5-->
         <Image Source="/Assets/tele.png" Name="imgTeletalk" Tapped="imgTeletalk_Tapped"
-               Grid.Row="4" Grid.Column="0" Margin="15,0"
+               Grid.Row="4" Grid.Column="0" Margin="15,0" Stretch="None"
                HorizontalAlignment="Left"/>
 
         <Image Source="/Assets/facebook.png" Name="imgFacebook" Tapped="imgFacebook_Tapped"
-               Grid.Row="4" Grid.Column="1" />
+               Grid.Row="4" Grid.Column="1" Margin="15,0" />
 
         <Image Source="/Assets/youtube.png" Name="imgYoutube" Tapped="imgYoutube_Tapped"
                Grid.Row="4" Grid.Column="1" 

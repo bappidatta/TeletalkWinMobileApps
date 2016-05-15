@@ -19,8 +19,8 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <!--Row 1-->
@@ -54,24 +54,31 @@
         </StackPanel>
 
         <!--Row 4-->
-        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Background="#98e698" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="55">
-            <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="PACKAGE" Width="150" VerticalAlignment="Center" TextAlignment="Center" 
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Background="#98e698">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                <TextBlock Text="PACKAGE" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
             </Border>
-            <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="CODE" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            <Border BorderThickness="1" BorderBrush="White"  Grid.Column="1">
+                <TextBlock Text="CODE" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
             </Border>
-            <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="SEND TO" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            <Border BorderThickness="1" BorderBrush="White"  Grid.Column="2">
+                <TextBlock Text="SEND TO" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
             </Border>
-            <Border BorderThickness="1" BorderBrush="White">
-                <TextBlock Text="SEND" Width="130" VerticalAlignment="Center" TextAlignment="Center" 
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+            <Border BorderThickness="1" BorderBrush="White"  Grid.Column="3">
+                <TextBlock Text="SEND" VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
             </Border>
-        </StackPanel>
+        </Grid>
 
         <!--Row 5-->
         <ScrollViewer
@@ -85,32 +92,45 @@
             <ListView Name="packagesLigrationListView"
                   DataContext="{Binding}"
                   Loaded="packagesLigrationListView_Loaded" ItemClick="packagesLigrationListView_ItemClick">
-                
+
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Height="55">
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="{Binding package_name}" Width="150" VerticalAlignment="Center" TextAlignment="Center" 
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                        <Grid Grid.Row="3" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border BorderThickness="1" BorderBrush="White" Grid.Column="0">
+                                <TextBlock Text="{Binding package_name}" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                             </Border>
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="{Binding package_code}" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            <Border BorderThickness="1" BorderBrush="White"  Grid.Column="1">
+                                <TextBlock Text="{Binding package_code}" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                             </Border>
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <TextBlock Text="{Binding send_to}" Width="90" VerticalAlignment="Center" TextAlignment="Center" 
-                                           TextWrapping="Wrap" Foreground="Black" FontSize="20"/>
+                            <Border BorderThickness="1" BorderBrush="White"  Grid.Column="2">
+                                <TextBlock Text="{Binding send_to}" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextAlignment="Center" 
+                                           TextWrapping="Wrap" Foreground="Black" FontSize="14"/>
                             </Border>
-                            <Border BorderThickness="1" BorderBrush="White">
-                                <Button Click="btnSend_Click" Content="SEND" Name="btnSend"
-                                    HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                            <Border BorderThickness="1" BorderBrush="White"  Grid.Column="3">
+                                <Button Click="btnSend_Click" Content="SEND" Name="btnSend" MinWidth="85"
+                                    HorizontalAlignment="Center" VerticalAlignment="Center"
                                     Foreground="Black" FontSize="16" BorderBrush="Transparent">
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
                                     </Button.Background>
                                 </Button>
                             </Border>
-                        </StackPanel>
+                        </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

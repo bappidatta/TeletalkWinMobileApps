@@ -139,11 +139,11 @@
                             </Border>
                             <Border BorderThickness="1" BorderBrush="White" Grid.Column="4">
                                 <Button Click="btnSend_Click" Name="btnSend" MinWidth="85"
-                                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                                    HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding subscription_code}"
                                     Foreground="Black" FontSize="14" BorderBrush="Transparent">
-                                    <Button.Content>
+                                    <!--<Button.Content>
                                         <TextBlock TextWrapping="Wrap" Text="{Binding subscription_code}"></TextBlock>
-                                    </Button.Content>
+                                    </Button.Content>-->
                                     <Button.Background>
                                         <ImageBrush Stretch="Fill" ImageSource="/Assets/green_button_small.png"/>
                                     </Button.Background>
