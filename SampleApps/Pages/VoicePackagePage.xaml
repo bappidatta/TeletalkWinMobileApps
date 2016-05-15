@@ -298,7 +298,7 @@
         </ScrollViewer>
 
         <!--Row 5-->
-        <Border Background="#55d5f9" BorderThickness="1" BorderBrush="Black" Grid.Row="4" Grid.ColumnSpan="2">
+        <Border Background="#55d5f9" Padding="0,5,0,0" BorderThickness="1" BorderBrush="Black" Grid.Row="4" Grid.ColumnSpan="2">
             <TextBlock
                 Text="*All prices are excluding VAT SD and Surcharge" 
                 HorizontalAlignment="Stretch"
